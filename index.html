@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To You Letter</title>
   <style>
-    body, html {
+    body {
       margin: 0;
-      padding: 0;
-      height: 100%;
+      padding: 20px;
       font-family: Arial, sans-serif;
       background: #f9f9f9;
+      color: #333;
     }
     .canva-container {
       position: relative;
@@ -37,8 +37,8 @@
     }
     .canva-link {
       display: block;
-      text-align: center;
       margin-top: 1em;
+      text-align: center;
       font-size: 14px;
       color: #333;
       text-decoration: none;
@@ -59,7 +59,18 @@
     </iframe>
   </div>
 
-  <a class="canva-link" href="https://www.canva.com/design/DAHCc6lo-Yk/TxKlF4dWg5Rloes9VRL6KA/watch?utm_content=DAHCc6lo-Yk&utm_campaign=designshare&utm_medium=embeds&utm_source=link" target="_blank" rel="noopener">Teruskan?</a> by Farhan Fadhillah
+  <!-- Fallback link -->
+  <a class="canva-link"
+     href="https://www.canva.com/design/DAHCc6lo-Yk/TxKlF4dWg5Rloes9VRL6KA/watch?utm_content=DAHCc6lo-Yk&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
+     target="_blank" rel="noopener">
+     Teruskan?
+  </a> by Farhan Fadhillah
+
+  <!-- Audio autoplay & loop -->
+  <audio autoplay loop>
+    <source src="song.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 
 </body>
 </html>
